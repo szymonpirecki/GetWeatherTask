@@ -23,5 +23,6 @@ public class WeatherApiTest extends WeatherBase {
                 .statusCode(200)
                 .extract().response().jsonPath();
         assertThat(jsonPath.get("name").toString()).isEqualTo(city);
+        assertThat(jsonPath.getList("weather")).isNotNull();
     }
 }
