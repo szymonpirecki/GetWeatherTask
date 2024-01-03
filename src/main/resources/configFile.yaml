@@ -1,0 +1,13 @@
+environment: test
+
+environments:
+  test:
+    envName: test
+    baseUri: https://api.openweathermap.org/
+    token: 89a2ed8a594cc497a6273490e7ca59dd
+    logRequestsDetails: false
+    logResponsesDetails: false
+    endpoints:
+      weatherEndpoint: data/2.5/weather
+      geoCodingEndpoint: geo/1.0/direct
+
